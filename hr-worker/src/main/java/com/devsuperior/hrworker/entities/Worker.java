@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Data
 @Entity
 @Table(name = "tb_worker ")
-public class Workers implements Serializable {
+public class Worker implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,10 +18,10 @@ public class Workers implements Serializable {
 
     private Double dailyIncome;
 
-    public Workers() {
+    public Worker() {
     }
 
-    public Workers(Long id, String name, Double dailyIncome) {
+    public Worker(Long id, String name, Double dailyIncome) {
         this.id = id;
         this.name = name;
         this.dailyIncome = dailyIncome;
