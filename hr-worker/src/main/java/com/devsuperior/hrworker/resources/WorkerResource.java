@@ -26,8 +26,8 @@ public class WorkerResource {
     @Autowired
     private Environment env;
 
-    @Value("${test.config}")
-    private String testConfig;
+//    @Value("${test.config}")
+//    private String testConfig;
 
     @Autowired
     private WorkerRepository workerRepository;
@@ -44,7 +44,7 @@ public class WorkerResource {
 
     @GetMapping(value = "/configs")
     public ResponseEntity<Void> getConfigs() {
-        logger.info("Config: "+testConfig);
+//        logger.info("Config: "+testConfig);
         return ResponseEntity.noContent().build();
     }
 
